@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE studentList[
+	<!ELEMENT studentList (student*)>
+	<!ELEMENT student (name, id, cgpa, courses*)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT id (#PCDATA)>
+	<!ELEMENT cgpa (#PCDATA)>
+	<!ELEMENT courses (course)*>
+	<!ELEMENT course (cname, csec, cgrade)>
+	<!ATTLIST course
+				>
+]>
+
+<studentList>
+	<student>
+		<name>Led Zepplin</name>
+		<id>15-28657-1</id>
+		<cgpa>3.3</cgpa>
+		<courses>
+			<course number="1">
+				<cname>"Web Tech"</cname>
+				<csec>"F"</csec>
+				<cgrade>A</cgrade>
+			</course>
+		</courses>
+	</student>
+	
+	<student>
+		<name>John Petrucci</name>
+		<id>13-28657-1</id>
+		<cgpa>3.9</cgpa>
+		<courses>
+			<course number="1">
+				<cname>Web Tech</cname>
+				<csec>F</csec>
+				<cgrade>A+</cgrade>
+			</course>
+		</courses>
+	</student>
+</studentList>
